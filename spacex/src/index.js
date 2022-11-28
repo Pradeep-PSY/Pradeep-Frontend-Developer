@@ -4,14 +4,18 @@ import * as ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
+import { store } from './Store/Store';
+import { Provider } from 'react-redux';
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
 
 root.render(
   <StrictMode>
+    <Provider store={store}>
     <ColorModeScript />
     <App />
+    </Provider>
   </StrictMode>
 );
 
