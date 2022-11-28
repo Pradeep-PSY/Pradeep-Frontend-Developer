@@ -15,7 +15,7 @@ const Banner = () =>{
           w={'full'}
           h={'100vh'}
           backgroundImage={
-            'url(https://blogs.nasa.gov/spacex/wp-content/uploads/sites/227/2020/12/KSC-20201206-PH-KLS01_0083-768x512.jpg)'
+            'url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/rocket-launch-closeup-spacex-falcon-heavy-photo-spacex-edit-m-hauser.jpg)'
           }
           backgroundSize={'cover'}
           backgroundPosition={'center center'}>

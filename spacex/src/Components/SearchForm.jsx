@@ -3,6 +3,7 @@ import React from 'react'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { GetFilteredData } from '../Actions/Action';
+import { ColorModeSwitcher } from '../ColorModeSwitcher';
 
 const SearchForm = () => {
     const [status, setStatus] = useState('');
@@ -35,6 +36,7 @@ const SearchForm = () => {
                 <option value='Dragon 1.1'>Dragon 1.1</option>
                 <option value='Dragon 2.0'>Dragon 2.0</option>
             </Select>
+            <ColorModeSwitcher />
             
         </Flex>
     )
