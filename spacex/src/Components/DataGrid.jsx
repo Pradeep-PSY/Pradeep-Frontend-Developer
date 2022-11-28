@@ -27,8 +27,8 @@ const DataGrid = () => {
 
                 {
 
-                    data && data.map((el) => (
-                        <GridItem  >
+                    data && data.map((el,i) => (
+                        <GridItem key={i} >
 
                             <Card maxW='sm'>
                                 <CardBody >
