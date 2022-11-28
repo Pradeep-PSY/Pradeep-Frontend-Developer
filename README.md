@@ -1,4 +1,4 @@
-# BrainStorm Assignment
+# Brainstorm Assignment
 
 
 ## Tech Stack
