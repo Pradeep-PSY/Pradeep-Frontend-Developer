@@ -1,4 +1,4 @@
-import { Box, Button, ButtonGroup, Divider,  GridItem, Heading, Image, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, SimpleGrid, Stack, Text, useDisclosure } from '@chakra-ui/react'
+import { Box, Button, ButtonGroup, Divider, GridItem, Heading, Image, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, SimpleGrid, Stack, Text, useDisclosure } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { GetData } from '../Actions/Action';
@@ -18,7 +18,7 @@ const DataGrid = () => {
 
     console.log(data)
     useEffect(() => {
-        dispatch(GetData({page:true,limit:7}))
+        dispatch(GetData({ page: true, limit: 7 }))
     }, [])
 
     return (

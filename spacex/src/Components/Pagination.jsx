@@ -7,14 +7,14 @@ const Pagination = () => {
     const [count, setCount] = useState(1);
     const dispatch = useDispatch();
 
-    const handleDecrement = () =>{
+    const handleDecrement = () => {
         setCount(count - 1);
-        dispatch(GetData({page:true,limit:7}))
+        dispatch(GetData({ page: true, limit: 7 }))
     }
 
-    const handleIncrement = () =>{
+    const handleIncrement = () => {
         setCount(count + 1);
-        dispatch(GetData({page:true,limit:10}))
+        dispatch(GetData({ page: true, limit: 10 }))
     }
 
     return (

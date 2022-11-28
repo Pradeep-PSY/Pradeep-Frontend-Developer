@@ -11,13 +11,13 @@ const SearchForm = () => {
     const dispatch = useDispatch();
 
     const handleChange = (e) => {
-        let {name, value} = e.target;
-      
-        if(name === 'status'){
+        let { name, value } = e.target;
+
+        if (name === 'status') {
             setStatus(value)
             dispatch(GetFilteredData(value, type))
         }
-        else if(name === 'type'){
+        else if (name === 'type') {
             setType(value)
             dispatch(GetFilteredData(status, value))
         }
@@ -26,18 +26,18 @@ const SearchForm = () => {
     }
     return (
         <Flex m='3'>
-            <Select placeholder='Select Status' name='status' m='4' onChange={(e)=>handleChange(e)}>
+            <Select placeholder='Select Status' name='status' m='4' onChange={(e) => handleChange(e)}>
                 <option value='retired'>Retired</option>
                 <option value='active'>Active</option>
                 <option value='destroyed'>Destroyed</option>
             </Select>
-            <Select placeholder='Select Type' name='type' m='4'  onChange={(e)=>handleChange(e)}>
+            <Select placeholder='Select Type' name='type' m='4' onChange={(e) => handleChange(e)}>
                 <option value='Dragon 1.0'>Dragon 1.0</option>
                 <option value='Dragon 1.1'>Dragon 1.1</option>
                 <option value='Dragon 2.0'>Dragon 2.0</option>
             </Select>
             <ColorModeSwitcher />
-            
+
         </Flex>
     )
 }
